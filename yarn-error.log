@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarnpkg add --exact --cwd /home/arc/zephyr/iseven.zephyr react react-dom next
+
+PATH: 
+  /tmp/yarn--1627054182486-0.2917930691087167:/home/arc/.config/yarn/global/node_modules/.bin:/home/arc/.config/yarn/link/node_modules/.bin:/home/arc/.yarn/bin:/usr/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/bin/node_modules/npm/bin/node-gyp-bin:/home/arc/bin:/home/arc/.local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/arc/go/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ENETUNREACH 2620:118:7008::1104:80 - Local (:::0)
+      at internalConnect (node:net:916:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:433:18)
+      at emitLookup (node:net:1060:9)
+      at /usr/lib/node_modules/yarn/lib/cli.js:107150:29
+      at /usr/lib/node_modules/yarn/lib/cli.js:106996:25
+      at RawTask.module.exports.RawTask.call (/usr/lib/node_modules/yarn/lib/cli.js:83614:19)
+      at flush (/usr/lib/node_modules/yarn/lib/cli.js:83696:29)
+      at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+npm manifest: 
+  {
+    "name": "iseven.zephyr",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
